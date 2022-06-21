@@ -1,0 +1,147 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.main {
+    font-family: 'Nunito', sans-serif;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+nav {
+    text-align: center;
+    height: 700px;
+    width: 28%;
+    min-width: 230px;
+}
+
+nav p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav img {
+    width: 170px;
+    border-radius: 50%;
+}
+
+nav ul li {
+    margin: 1rem 0;
+    background-color: #ff6363;
+    padding: 0.75rem;
+    border-radius: 35px;
+    min-width: 180px;
+    transition: 3s;
+}
+
+nav {
+    animation: jauge 200ms;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+.textsmall {
+    font-size: 0.75rem;
+}
+
+section {
+    margin-left: 2rem;
+    width: 65%;
+}
+
+article img {
+    width: 300px;
+}
+
+a {
+    color: #ff6363;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 2, 5rem 1rem 1.5rem 1rem;
+}
+
+.myclass1 {
+    display: flex;
+}
+
+.option {
+    display: flex;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.formulaire input,
+textarea {
+    border: none;
+}
+
+.formdroit {
+    margin-left: 3rem;
+}
+
+@keyframes jauge {
+    0% {
+        transform: scaleY(0);
+    }
+
+    24% {
+        transform: scaleY(.4);
+    }
+
+    46% {
+        transform: scaleY(.81);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+
+/*Sur les écrans, quand la largeur de la fenêtre fait au maximum 480px*/
+
+@media all and (max-width: 480px) {
+nav{
+    flex-direction: column;
+    width: 100%;
+}
+.myclass1{
+    flex-direction: column;
+}
+.option{
+    flex-direction: column;
+}
+.formulaire{
+    flex-direction: column;
+}
+
+}
